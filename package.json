@@ -1,0 +1,22 @@
+{
+  "name": "rate-limiter-service",
+  "version": "1.0.0",
+  "description": "generic service to handle rate limiting",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Kiran Devarakonda",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "google-protobuf": "^3.4.0",
+    "grpc": "^1.6.6",
+    "ioredis": "^3.1.4"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-jest": "^21.2.0",
+    "jest": "^21.2.1"
+  }
+}
