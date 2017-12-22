@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package ratelimiter;
+
+service RateLimiter {
+    rpc checkRequest(Request) returns (State) {}
+}
+
+message Request {
+    string key = 1;
+    string expire = 2;
+}
+
+message State {
+    bool available = 1;
+    int32 newValue = 2;
+}
